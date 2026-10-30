@@ -1,0 +1,54 @@
+{
+  "name": "uk_ons_mcp_server",
+  "version": "1.1.0",
+  "description": "MCP server for the UK Office for National Statistics (ONS) CMD API - providing access to UK government statistics",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "uk_ons_mcp_server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "test": "npm run build && node test/smoke.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "uk",
+    "ons",
+    "statistics",
+    "government-data",
+    "demographics",
+    "census"
+  ],
+  "author": "Dwain Barnes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwain-barnes/uk-ons-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dwain-barnes/uk-ons-mcp-server/issues"
+  },
+  "homepage": "https://github.com/dwain-barnes/uk-ons-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ]
+}
