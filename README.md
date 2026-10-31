@@ -2,7 +2,7 @@
 
 An AI multi-agent application that answers questions about UK statistics using the official **UK Office for National Statistics (ONS) MCP server**, drafts a post for **X / Twitter** (or LinkedIn) in your brand voice, generates an **easy-to-read statistical graph or chart**, **waits for your approval**, and then publishes through X/Buffer or the local Social MCP server.
 
-> Combines the official UK Office for National Statistics (ONS) MCP server (`mcp/uk-ons-mcp-server`) with Google ADK multi-agent orchestration, custom UK phone privacy guardrails, persistent provenance tracking, and an interactive human approval gate.
+> Combines the UK Office for National Statistics (ONS) MCP server (created by https://github.com/dwain-barnes - https://github.com/dwain-barnes/uk-ons-mcp-server) (`mcp/uk-ons-mcp-server`) with Google ADK multi-agent orchestration (built on top of system architecture provided by https://github.com/sonikajanagill - https://github.com/sonikajanagill/ai-devcamp-labs), custom UK phone privacy guardrails, persistent provenance tracking, and an interactive human approval gate.
 
 ---
 
