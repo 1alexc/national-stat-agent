@@ -3,4 +3,4 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 uv sync
-exec uv run uvicorn backend.main:app --port 8000 --reload
+exec uv run python -m uvicorn backend.main:app --port 8000 --reload
